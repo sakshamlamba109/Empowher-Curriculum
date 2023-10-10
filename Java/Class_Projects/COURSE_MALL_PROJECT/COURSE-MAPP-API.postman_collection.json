@@ -1,0 +1,362 @@
+{
+	"info": {
+		"_postman_id": "2da85c7d-65f4-4cc4-b151-a1b5d526c7df",
+		"name": "COURSE-MAPP-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7788663"
+	},
+	"item": [
+		{
+			"name": "courses",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{course-mall-api-url}}",
+					"host": [
+						"{{course-mall-api-url}}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Sample Response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{course-mall-api-url}}",
+							"host": [
+								"{{course-mall-api-url}}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 10 Oct 2023 04:19:47 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"course-Id-1\",\n        \"name\": \"course name 1\",\n        \"category\": \"category 1\",\n        \"link\": \"course link 1\",\n        \"createdAt\": \"2023-06-20T10:26:42.889985\",\n        \"author\": \"author name 1\",\n        \"degree\": \"HIGHEST DEGREE 1\",\n        \"email\": \"enamil-1@test.com\"\n    },\n    {\n        \"id\": \"course-Id-2\",\n        \"name\": \"course name 2\",\n        \"category\": \"category 2\",\n        \"link\": \"course link 2\",\n        \"createdAt\": \"2023-06-20T10:26:42.889985\",\n        \"author\": \"author name 2\",\n        \"degree\": \"HIGHEST DEGREE 2\",\n        \"email\": \"enamil-2@test.com\"\n    },\n    {\n        \"id\": \"course-Id-3\",\n        \"name\": \"course name 3\",\n        \"category\": \"category 3\",\n        \"link\": \"course link 3\",\n        \"createdAt\": \"2023-06-20T10:26:42.889985\",\n        \"author\": \"author name 3\",\n        \"degree\": \"HIGHEST DEGREE 3\",\n        \"email\": \"enamil-3@test.com\"\n    },\n    {\n        \"id\": \"course-Id-4\",\n        \"name\": \"course name 4\",\n        \"category\": \"category 1\",\n        \"link\": \"course link 4\",\n        \"createdAt\": \"2023-06-20T10:26:42.889985\",\n        \"author\": \"author name 4\",\n        \"degree\": \"HIGHEST DEGREE 4\",\n        \"email\": \"enamil-4@test.com\"\n    },\n    {\n        \"id\": \"course-Id-5\",\n        \"name\": \"course name 5\",\n        \"category\": \"category 1\",\n        \"link\": \"course link 5\",\n        \"createdAt\": \"2023-06-20T10:26:42.889985\",\n        \"author\": \"author name 5\",\n        \"degree\": \"HIGHEST DEGREE 5\",\n        \"email\": \"enamil-5@test.com\"\n    },\n    {\n        \"id\": \"f5723a14-ace3-414d-9743-45a33de6c65f\",\n        \"name\": \"course name 6\",\n        \"category\": \"category 6\",\n        \"link\": \"course link 6\",\n        \"createdAt\": \"2023-10-10T09:43:20.611521\",\n        \"author\": \"author name 6\",\n        \"degree\": \"HIGHEST DEGREE 6\",\n        \"email\": \"email-6@test.com\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "course by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{course-mall-api-url}}/course-Id-1",
+					"host": [
+						"{{course-mall-api-url}}"
+					],
+					"path": [
+						"course-Id-1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Sample Response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{course-mall-api-url}}/course-Id-1",
+							"host": [
+								"{{course-mall-api-url}}"
+							],
+							"path": [
+								"course-Id-1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 10 Oct 2023 04:10:28 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"course-Id-1\",\n    \"name\": \"course name 1\",\n    \"category\": \"category 1\",\n    \"link\": \"course link 1\",\n    \"createdAt\": \"2023-06-20T10:26:42.889985\",\n    \"author\": \"author name 1\",\n    \"degree\": \"HIGHEST DEGREE 1\",\n    \"email\": \"enamil-1@test.com\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Add a Course",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"name\": \"course name 6\",\r\n        \"category\": \"category 6\",\r\n        \"link\": \"course link 6\",\r\n        \"createdAt\": \"2023-06-20T10:26:42.889985\",\r\n        \"author\": \"author name 6\",\r\n        \"degree\": \"HIGHEST DEGREE 6\",\r\n        \"email\": \"email-6@test.com\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{course-mall-api-url}}",
+					"host": [
+						"{{course-mall-api-url}}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Sample Response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"name\": \"course name 6\",\r\n        \"category\": \"category 6\",\r\n        \"link\": \"course link 6\",\r\n        \"createdAt\": \"2023-06-20T10:26:42.889985\",\r\n        \"author\": \"author name 6\",\r\n        \"degree\": \"HIGHEST DEGREE 6\",\r\n        \"email\": \"email-6@test.com\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{course-mall-api-url}}",
+							"host": [
+								"{{course-mall-api-url}}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 10 Oct 2023 04:13:20 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"f5723a14-ace3-414d-9743-45a33de6c65f\",\n    \"name\": \"course name 6\",\n    \"category\": \"category 6\",\n    \"link\": \"course link 6\",\n    \"createdAt\": \"2023-10-10T09:43:20.6115209\",\n    \"author\": \"author name 6\",\n    \"degree\": \"HIGHEST DEGREE 6\",\n    \"email\": \"email-6@test.com\"\n}"
+				}
+			]
+		},
+		{
+			"name": "update a course",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"id\": \"course-Id-1\",\r\n        \"name\": \"course name 1\",\r\n        \"category\": \"category 1\",\r\n        \"link\": \"course link 1\",\r\n        \"createdAt\": \"2023-06-20T10:26:42.889985\",\r\n        \"author\": \"author name 1\",\r\n        \"degree\": \"HIGHEST DEGREE 1\",\r\n        \"email\": \"email-1@test.com\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{course-mall-api-url}}",
+					"host": [
+						"{{course-mall-api-url}}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Sample Response",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"f5723a14-ace3-414d-9743-45a33de6c65f\",\r\n    \"name\": \"course name 6\",\r\n    \"category\": \"category 6\",\r\n    \"link\": \"course link 6\",\r\n    \"createdAt\": \"2023-10-10T09:43:20.6115209\",\r\n    \"author\": \"author name 6\",\r\n    \"degree\": \"HIGHEST DEGREE 6\",\r\n    \"email\": \"email-6@test.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{course-mall-api-url}}",
+							"host": [
+								"{{course-mall-api-url}}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 10 Oct 2023 04:18:08 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"f5723a14-ace3-414d-9743-45a33de6c65f\",\n    \"name\": \"course name 6\",\n    \"category\": \"category 6\",\n    \"link\": \"course link 6\",\n    \"createdAt\": \"2023-10-10T09:43:20.611521\",\n    \"author\": \"author name 6\",\n    \"degree\": \"HIGHEST DEGREE 6\",\n    \"email\": \"email-6@test.com\"\n}"
+				}
+			]
+		},
+		{
+			"name": "delete the course",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{course-mall-api-url}}",
+					"host": [
+						"{{course-mall-api-url}}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Sample Response",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"id\": \"course-Id-1\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{course-mall-api-url}}",
+							"host": [
+								"{{course-mall-api-url}}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "48"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 10 Oct 2023 04:53:25 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Course with id: course-Id-1 deleted successfully"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "course-mall-api-url",
+			"value": "http://localhost:8080/courses"
+		}
+	]
+}
